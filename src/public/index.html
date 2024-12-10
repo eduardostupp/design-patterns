@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Patterns App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Design Patterns App</h1>
+
+    <section>
+        <h2>Cadastro de Usuários</h2>
+        <form id="userForm">
+            <input type="text" id="name" placeholder="Nome" required>
+            <input type="email" id="email" placeholder="E-mail" required>
+            <button type="submit">Cadastrar</button>
+        </form>
+        <ul id="userList"></ul>
+    </section>
+
+    <section>
+        <h2>Calcular Área de Formas e Exibir Desenho</h2>
+        <form id="shapeForm">
+            <select id="shapeType" required>
+                <option value="circle">Círculo</option>
+                <option value="square">Quadrado</option>
+                <option value="rectangle">Retângulo</option>
+            </select>
+            <input type="text" id="shapeParams" placeholder="Parâmetros (ex: 10,5)" required>
+            <button type="submit">Desenhar</button>
+        </form>
+        <p id="shapeResult"></p>
+        <canvas id="shapeCanvas" width="400" height="400" style="border:1px solid #000;"></canvas>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
